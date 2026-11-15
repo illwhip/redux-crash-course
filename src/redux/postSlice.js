@@ -1,4 +1,4 @@
-import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query";
+import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 export const postsApi = createApi({
   reducerPath: "postsApi",
@@ -15,4 +15,4 @@ export const postsApi = createApi({
   })
 })
 
-export const {useGetAllPostsQuery, useGetPostsById} = postsApi
+export const {useGetAllPostsQuery, useGetPostsByIdQuery} = postsApi
